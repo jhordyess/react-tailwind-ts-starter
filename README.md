@@ -16,10 +16,10 @@ This is a starter project for building a web application using React with TypeSc
 ## Prerequisites
 
 1. Install [Node.js](https://nodejs.org/en/download) (LTS version recommended).
-2. Enable Corepack to use a stable version of pnpm:
+2. Install [pnpm](https://pnpm.io/installation) globally:
 
 ```sh
-corepack enable pnpm
+npm install -g pnpm@latest-10
 ```
 
 ## Getting Started
@@ -67,11 +67,12 @@ react-tailwind-ts-starter/
 ├── vite.config.ts          # Vite configuration file.
 ├── .husky/                 # Directory for Git hooks managed by Husky.
 │   ├── pre-push            # Pre-push hook to run linting and TypeScript checks.
+├── public/                 # Public assets directory.
+│   ├── icon.svg            # Sample icon.
 ├── src/
 │   ├── App.tsx             # Main application component.
 │   ├── index.css           # Global CSS file.
 │   ├── main.tsx            # Main entry point of the application.
-│   ├── vite-env.d.ts       # Vite types file.
 ```
 
 ## Commands
