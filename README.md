@@ -30,25 +30,25 @@ npm install -g pnpm@latest-10
 git clone https://github.com/jhordyess/react-tailwind-ts-starter.git
 ```
 
-1. Navigate to the project folder:
+2. Navigate to the project folder:
 
 ```sh
 cd react-tailwind-ts-starter
 ```
 
-1. Install dependencies:
+3. Install dependencies:
 
 ```sh
 pnpm i
 ```
 
-1. Start the development server:
+4. Start the development server:
 
 ```sh
 pnpm dev
 ```
 
-1. Open your browser and visit [http://localhost:5173](http://localhost:5173) to see your project.
+5. Open your browser and visit [http://localhost:5173](http://localhost:5173) to see your project.
 
 ## Automatic Lifecycle Scripts
 
