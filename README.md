@@ -7,7 +7,7 @@ This is a starter project for building a web application using React with TypeSc
 - **React**: Fast and flexible UI library for building user interfaces. (v. 19)
 - **TypeScript**: Strongly typed JavaScript for better development experience. (v. 5)
 - **Tailwind CSS**: Utility-first CSS framework for rapid UI development. (v. 4)
-- **Vite**: Lightning-fast build tool for modern web projects. (v. 7)
+- **Vite**: Lightning-fast build tool for modern web projects. (v. 8)
 - **ESLint**: Linting for maintaining code quality. (v. 9)
 - **Prettier**: Code formatting for consistent style. (v. 3)
 - **Husky**: Git hooks for enforcing pre-push checks. (v. 9)
@@ -30,25 +30,38 @@ npm install -g pnpm@latest-10
 git clone https://github.com/jhordyess/react-tailwind-ts-starter.git
 ```
 
-2. Navigate to the project folder:
+1. Navigate to the project folder:
 
 ```sh
 cd react-tailwind-ts-starter
 ```
 
-3. Install dependencies:
+1. Install dependencies:
 
 ```sh
 pnpm i
 ```
 
-4. Start the development server:
+1. Start the development server:
 
 ```sh
 pnpm dev
 ```
 
-5. Open your browser and visit [http://localhost:5173](http://localhost:5173) to see your project.
+1. Open your browser and visit [http://localhost:5173](http://localhost:5173) to see your project.
+
+## Automatic Lifecycle Scripts
+
+This template includes two useful npm lifecycle scripts configured in `package.json`.
+
+- `prepare`: Runs after install and initializes Husky, so Git hooks (like `pre-push`) are ready automatically.
+- `postinstall`: Runs after install and executes `pnpm audit --audit-level moderate` to check for known vulnerabilities in dependencies.
+
+What this means:
+
+1. When you run `pnpm i`, Husky setup is done for you.
+2. A security check is also executed automatically after dependencies are installed.
+3. If vulnerabilities are found, review and update the affected packages before continuing.
 
 ## Project Structure
 
